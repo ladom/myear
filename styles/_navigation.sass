@@ -1,0 +1,146 @@
+@import fonts
+@import colors
+
+.navbar-main
+	background-color: $navbg
+	min-height: 50px
+	border: none
+
+	.nav-container
+
+		.navbar-header
+
+			.hamburger-menu
+				border-radius: 0
+				width: 40px
+				height: 40px
+				background-color: $navbg
+
+				#nav-icon1
+					width: 30px
+					height: 24px
+					position: relative
+					top: -2px
+					left: -6px
+					margin: 0
+					transform: rotate(0deg)
+					transition: 1s ease-in-out
+					cursor: pointer
+
+					span
+						display: block
+						position: absolute
+						height: 4px
+						width: 100%
+						background: #eee
+						opacity: 1
+						left: 0
+						transform: rotate(0deg)
+						transition: .25s ease-in-out
+
+					span:nth-child(1)
+						top: 0px
+
+					span:nth-child(2)
+						top: 10px
+
+					span:nth-child(3)
+						top: 20px
+
+				#nav-icon1.open
+					span:nth-child(1)
+						top: 10px
+						transform: rotate(135deg)
+
+					span:nth-child(2)
+						opacity: 0
+						left: -30px
+
+					span:nth-child(3)
+						top: 10px
+						transform: rotate(-135deg)
+
+			.navbar-brand
+				padding: 5px
+
+				.logo
+					font-size: 2em
+					text-shadow: 1px 1px 0 #fff
+
+					.red
+						color: $red
+
+					.green
+						color: $green
+
+				.logo_small
+					font-size: 0.5em
+					text-transform: uppercase
+					color: #fff
+				
+
+		#navbar
+			font-family: $lato
+
+			@media (max-width: 991px)
+				margin: 0 auto
+				float: none!important
+
+			ul.nav
+
+				li
+
+					a
+						text-transform: uppercase
+						font-size: 18px
+						text-shadow: 1px 0 0 #000
+
+						span
+							color: inherit
+
+					ul.dropdown-menu
+
+						background-color: $navbg
+
+				li:nth-child(1) a
+					color: $rainbow1
+
+					&:hover
+						background-color: #666
+
+				li:nth-child(2) a
+					color: $rainbow2
+
+					&:hover
+						background-color: #666
+
+				li:nth-child(3) a
+					color: $rainbow3
+
+					&:hover
+						background-color: #666
+
+					&:active
+						background-color: #888
+
+				li:nth-child(4) a
+					color: $rainbow4
+
+					&:hover
+						background-color: #666
+
+				li:nth-child(5) a
+					color: $rainbow5
+
+					&:hover
+						background-color: #666
+
+				li:nth-child(6) a
+					color: $rainbow7
+
+					&:hover
+						background-color: #666
+
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover
+	background-color: #777

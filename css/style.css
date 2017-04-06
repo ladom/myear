@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Lato:300&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Lato:300&subset=latin-ext");
+body {
+  background-color: #001122;
+  font-family: "Lato", sans-serif;
+  padding-top: 50px;
+}
+
+.navbar-main {
+  background-color: #444;
+  min-height: 50px;
+  border: none;
+}
+
+.navbar-main .nav-container .navbar-header .hamburger-menu {
+  border-radius: 0;
+  width: 40px;
+  height: 40px;
+  background-color: #444;
+}
+
+.navbar-main .nav-container .navbar-header .hamburger-menu #nav-icon1 {
+  width: 30px;
+  height: 24px;
+  position: relative;
+  top: -2px;
+  left: -6px;
+  margin: 0;
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+  transition: 1s ease-in-out;
+  cursor: pointer;
+}
+
+.navbar-main .nav-container .navbar-header .hamburger-menu #nav-icon1 span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: #eee;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.navbar-main .nav-container .navbar-header .hamburger-menu #nav-icon1 span:nth-child(1) {
+  top: 0px;
+}
+
+.navbar-main .nav-container .navbar-header .hamburger-menu #nav-icon1 span:nth-child(2) {
+  top: 10px;
+}
+
+.navbar-main .nav-container .navbar-header .hamburger-menu #nav-icon1 span:nth-child(3) {
+  top: 20px;
+}
+
+.navbar-main .nav-container .navbar-header .hamburger-menu #nav-icon1.open span:nth-child(1) {
+  top: 10px;
+  -webkit-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.navbar-main .nav-container .navbar-header .hamburger-menu #nav-icon1.open span:nth-child(2) {
+  opacity: 0;
+  left: -30px;
+}
+
+.navbar-main .nav-container .navbar-header .hamburger-menu #nav-icon1.open span:nth-child(3) {
+  top: 10px;
+  -webkit-transform: rotate(-135deg);
+      -ms-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+}
+
+.navbar-main .nav-container .navbar-header .navbar-brand {
+  padding: 5px;
+}
+
+.navbar-main .nav-container .navbar-header .navbar-brand .logo {
+  font-size: 2em;
+  text-shadow: 1px 1px 0 #fff;
+}
+
+.navbar-main .nav-container .navbar-header .navbar-brand .logo .red {
+  color: #ea0500;
+}
+
+.navbar-main .nav-container .navbar-header .navbar-brand .logo .green {
+  color: #07db0a;
+}
+
+.navbar-main .nav-container .navbar-header .navbar-brand .logo_small {
+  font-size: 0.5em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.navbar-main .nav-container #navbar {
+  font-family: "Lato", sans-serif;
+}
+
+@media (max-width: 991px) {
+  .navbar-main .nav-container #navbar {
+    margin: 0 auto;
+    float: none !important;
+  }
+}
+
+.navbar-main .nav-container #navbar ul.nav li a {
+  text-transform: uppercase;
+  font-size: 18px;
+  text-shadow: 1px 0 0 #000;
+}
+
+.navbar-main .nav-container #navbar ul.nav li a span {
+  color: inherit;
+}
+
+.navbar-main .nav-container #navbar ul.nav li ul.dropdown-menu {
+  background-color: #444;
+}
+
+.navbar-main .nav-container #navbar ul.nav li:nth-child(1) a {
+  color: #ed3237;
+}
+
+.navbar-main .nav-container #navbar ul.nav li:nth-child(1) a:hover {
+  background-color: #666;
+}
+
+.navbar-main .nav-container #navbar ul.nav li:nth-child(2) a {
+  color: #f58634;
+}
+
+.navbar-main .nav-container #navbar ul.nav li:nth-child(2) a:hover {
+  background-color: #666;
+}
+
+.navbar-main .nav-container #navbar ul.nav li:nth-child(3) a {
+  color: #fff212;
+}
+
+.navbar-main .nav-container #navbar ul.nav li:nth-child(3) a:hover {
+  background-color: #666;
+}
+
+.navbar-main .nav-container #navbar ul.nav li:nth-child(3) a:active {
+  background-color: #888;
+}
+
+.navbar-main .nav-container #navbar ul.nav li:nth-child(4) a {
+  color: #00a859;
+}
+
+.navbar-main .nav-container #navbar ul.nav li:nth-child(4) a:hover {
+  background-color: #666;
+}
+
+.navbar-main .nav-container #navbar ul.nav li:nth-child(5) a {
+  color: #00afef;
+}
+
+.navbar-main .nav-container #navbar ul.nav li:nth-child(5) a:hover {
+  background-color: #666;
+}
+
+.navbar-main .nav-container #navbar ul.nav li:nth-child(6) a {
+  color: #815aa4;
+}
+
+.navbar-main .nav-container #navbar ul.nav li:nth-child(6) a:hover {
+  background-color: #666;
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
+  background-color: #777;
+}
+
+.content {
+  min-height: 70vh;
+  width: 80vw;
+  background-color: #ffffee;
+  color: #000;
+  margin: 10vh auto;
+  max-width: 1200px;
+  opacity: 0.8;
+  box-shadow: 3px 3px 3px #fff;
+  padding: 20px;
+  z-index: 100;
+  border-radius: 10px;
+}
+
+.content p {
+  font-size: 22px;
+  text-align: justify;
+  opacity: 1;
+}
+
+.content button {
+  opacity: 1;
+  background-color: #07db0a;
+  font-size: 22px;
+  color: #fff;
+  outline: none;
+}
+
+canvas {
+  position: absolute;
+  top: 50px;
+  z-index: 0;
+}

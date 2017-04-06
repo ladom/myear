@@ -1,0 +1,19 @@
+{
+  "name": "myear",
+  "version": "1.0.0",
+  "description": "Festiwal Wyobraźni Muzycznej mYear",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ladom/myear.git"
+  },
+  "author": "Andrzej Ładomirski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ladom/myear/issues"
+  },
+  "homepage": "https://github.com/ladom/myear#readme"
+}
