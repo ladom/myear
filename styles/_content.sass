@@ -1,28 +1,23 @@
 @import colors
 @import fonts
-
-.content
-	min-height: 70vh
-	width: 80vw
-	background-color: $contentBg
-	color: #000
-	margin: 10vh auto
-	max-width: 1200px
-	opacity: 0.8
-	box-shadow: 3px 3px 3px #fff
-	padding: 20px
-	z-index: 100
-	border-radius: 10px
-
-	p
-		font-size: 22px
-		text-align: justify
-		opacity: 1
-
-	button
-		opacity: 1
-		background-color: $green
-		font-size: 22px
-		color: #fff
-		outline: none
 		
+.text
+	width: 80%
+	min-height: 50%
+	position: absolute
+	top: 100px
+	margin: 0 auto
+	background-color: rgba(255, 255, 255, 0.8)
+	color: #000
+	padding: 20px
+	border-radius: 5px
+	font-family: $lato
+
+.text__button
+	width: 150px
+	height: 60px
+	line-height: 60px
+	font-size: 1.2em
+
+.hide
+	display: none

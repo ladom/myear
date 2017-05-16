@@ -5,6 +5,16 @@ body {
   background-color: #001122;
   font-family: "Lato", sans-serif;
   padding-top: 50px;
+  width: 100vw;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
 }
 
 .navbar-main {
@@ -183,36 +193,26 @@ body {
   background-color: #777;
 }
 
-.content {
-  min-height: 70vh;
-  width: 80vw;
-  background-color: #ffffee;
-  color: #000;
-  margin: 10vh auto;
-  max-width: 1200px;
-  opacity: 0.8;
-  box-shadow: 3px 3px 3px #fff;
-  padding: 20px;
-  z-index: 100;
-  border-radius: 10px;
-}
-
-.content p {
-  font-size: 22px;
-  text-align: justify;
-  opacity: 1;
-}
-
-.content button {
-  opacity: 1;
-  background-color: #07db0a;
-  font-size: 22px;
-  color: #fff;
-  outline: none;
-}
-
-canvas {
+.text {
+  width: 80%;
+  min-height: 50%;
   position: absolute;
-  top: 50px;
-  z-index: 0;
+  top: 100px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #000;
+  padding: 20px;
+  border-radius: 5px;
+  font-family: "Lato", sans-serif;
+}
+
+.text__button {
+  width: 150px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 1.2em;
+}
+
+.hide {
+  display: none;
 }

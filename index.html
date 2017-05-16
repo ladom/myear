@@ -1,91 +1,118 @@
 <!DOCTYPE html>
 <html lang="pl">
 
-	<head>
-		<meta charset="UTF-8">
-		<title>mYear</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="Shortcut icon" href="pictures/my-icon.ico">
-		<link rel="stylesheet" type="text/css" href="css/reset.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-	</head>
-	
-	<body id="particles-js">
-		<div >
-			<nav class="navbar navbar-default navbar-fixed-top navbar-main">
-			<div class="container nav-container">
-				<div class="navbar-header">
-					<button class="navbar-toggle hamburger-menu" type="button" data-toggle="collapse" data-target="#navbar" id="menu-btn">
+<head>
+    <meta charset="UTF-8">
+    <title>mYear</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="Shortcut icon" href="pictures/my-icon.ico">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <script>
+        document.documentElement.className = 'js';
+    </script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <svg class="hidden">
+			<symbol id="icon-arrow" viewBox="0 0 24 24">
+				<title>arrow</title>
+				<polygon points="6.3,12.8 20.9,12.8 20.9,11.2 6.3,11.2 10.2,7.2 9,6 3.1,12 9,18 10.2,16.8 "/>
+			</symbol>
+			<symbol id="icon-drop" viewBox="0 0 24 24">
+				<title>drop</title>
+				<path d="M12,21c-3.6,0-6.6-3-6.6-6.6C5.4,11,10.8,4,11.4,3.2C11.6,3.1,11.8,3,12,3s0.4,0.1,0.6,0.3c0.6,0.8,6.1,7.8,6.1,11.2C18.6,18.1,15.6,21,12,21zM12,4.8c-1.8,2.4-5.2,7.4-5.2,9.6c0,2.9,2.3,5.2,5.2,5.2s5.2-2.3,5.2-5.2C17.2,12.2,13.8,7.3,12,4.8z"/><path d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0.3-0.7,0.7-0.7c0.4,0,0.7,0.3,0.7,0.7C15.8,16.5,14.1,18.2,12,18.2z"/>
+			</symbol>
+		</svg>
+
+
+    <main>
+        <header class="siteText">
+            <nav class="navbar navbar-default navbar-fixed-top navbar-main">
+                <div class="container nav-container">
+                    <div class="navbar-header">
+                        <button class="navbar-toggle hamburger-menu" type="button" data-toggle="collapse" data-target="#navbar" id="menu-btn">
 						<div id="nav-icon1">
 						  <span></span>
 						  <span></span>
 						  <span></span>
 						</div>
 					</button>
-					<a class="navbar-brand" href="#">
-						<span class="logo"><span class="red">mY</span><span class="green">ear</span></span><br><span class="logo_small">festiwal wyobraźni muzycznej</span>
-					</a>
-				</div>
-				<div class="collapse navbar-collapse navbar-right" id="navbar">
-					<ul class="nav navbar-nav">
-						<li>
-							<a href="">O Festiwalu</a>
-						</li>
-						<li>
-							<a href="">Wyniki</a>
-						</li>
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <a class="navbar-brand" href="#">
+                            <span class="logo"><span class="red">mY</span><span class="green">ear</span></span><br><span class="logo_small">festiwal wyobraźni muzycznej</span>
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse navbar-right" id="navbar">
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a href="">O Festiwalu</a>
+                            </li>
+                            <li>
+                                <a href="">Wyniki</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
 								Poprzednie edycje<span class="caret"></span>
 							</a>
-							<ul class="dropdown-menu">
-								<li><a href="">mYear 2012</a></li>
-								<li><a href="">mYear 2014</a></li>
-								<li><a href="">mYear 2016</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="">Regulaminy</a>
-						</li>
-						<li>
-							<a href="">Harmonogramy</a>
-						</li>
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <ul class="dropdown-menu">
+                                    <li><a href="">mYear 2012</a></li>
+                                    <li><a href="">mYear 2014</a></li>
+                                    <li><a href="">mYear 2016</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">Regulaminy</a>
+                            </li>
+                            <li>
+                                <a href="">Harmonogramy</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
 								Galeria<span class="caret"></span>
 							</a>
-							<ul class="dropdown-menu">
-								<li><a href="">Zdjęcia</a></li>
-								<li><a href="">Filmy</a></li>
-							</ul>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
+                                <ul class="dropdown-menu">
+                                    <li><a href="">Zdjęcia</a></li>
+                                    <li><a href="">Filmy</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
 
-		<div class="content">
-			<h1>Tutaj zawartość podstrony</h1>
-			<p>Tutaj znajdzie się zawartość podstrony, którą będzie można dowolnie formatować i ustawiać. Podstrona rozwinie się po naciśnięciu przycisku w menu, bez przeładowywania strony.<br>Oczywiście dobierzemy też kolory i wszystkie kształty (np. menu, tła itd.)</p>
-			<button class="btn btn-active">mYear</button><br>
-			<a href="http://www.myear.pl">Link do sprawdzenia</a>
-		</div>
 
-		</div>
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<script src="scripts/particles.js"></script>
-		<script src="scripts/app.js"></script>
-		<script src="scripts/navBtn.js"</script>
-		<script src="scripts/main.js"></script>
+        </header>
+        <div class="content">
+            <!-- The canvas where ThreeJs renders the WebGL -->
+            <canvas id="scene"></canvas>
+        </div>
 
-		<audio autoplay loop>
+
+    </main>
+    <div class="text">
+        <p>Tutaj przykładowy tekst</p>
+        <button class="text__button">Zamknij okno</button>
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+    <script src="scripts/navBtn.js"></script>
+    <script src="scripts/vendors/three.min.js"></script>
+    <script src="scripts/demo1.js"></script>
+    <script src="scripts/main.js"></script>
+
+    <audio autoplay loop>
 			<source src="sounds/mmoc.mp3" type="audio/mpeg">
 		</audio>
-	</body>
+</body>
 
 </html>
